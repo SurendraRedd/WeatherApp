@@ -34,7 +34,7 @@ from streamlit_lottie import st_lottie
 import codecs
 
 # INSERT YOUR API  KEY WHICH YOU PASTED IN YOUR secrets.toml file 
-api_key =  ''
+api_key =  '912e4064455dac29bd16d9d15e238209'
 
 url = 'http://api.openweathermap.org/data/2.5/weather?q={}&appid={}'
 url_1 = 'https://api.openweathermap.org/data/2.5/onecall/timemachine?lat={}&lon={}&dt={}&appid={}'
