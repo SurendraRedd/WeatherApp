@@ -1,0 +1,8 @@
+streamlit
+pandas
+pyecharts
+st-radial
+streamlit-lottie
+requests
+link-button
+hydralit
