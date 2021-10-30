@@ -80,7 +80,7 @@ def getweather(city):
         print("error in search !")
 
 def renderReport():
-    HtmlFile = open("./Basic_Example.html", 'r', encoding='utf-8')
+    HtmlFile = open("Basic_Example.html", 'r', encoding='utf-8')
     source_code = HtmlFile.read() 
     #print(source_code)
     components.html(source_code,width=700,height=500)
@@ -144,7 +144,8 @@ def my_home():
         st.sidebar.write("""
                     ## Weather Application Details
                     """)
-	st.sidebar.image('https://cdn.dribbble.com/users/1761137/screenshots/3665783/dribbble.gif')
+        st.sidebar.image('https://cdn.dribbble.com/users/1761137/screenshots/3665783/dribbble.gif')
+
     st.header('☁ Get Weather Details')   
     #st.markdown('https://openweathermap.org/api') 
 
@@ -167,7 +168,7 @@ def my_home():
                     .add('lq',[round(res[1],2)/100], center=["15%", "35%"])    
                 )
                 # Export to html
-                customer_satisfaction.render(('./Basic_Example.html')) 
+                customer_satisfaction.render(('Basic_Example.html')) 
                 renderReport()
             
     if city_name:
@@ -228,7 +229,7 @@ def Contact():
         st.sidebar.write("""
                     ## Weather Application Details
                     """)
-	st.sidebar.image('https://cdn.dribbble.com/users/1761137/screenshots/3665783/dribbble.gif')
+        st.sidebar.image('https://cdn.dribbble.com/users/1761137/screenshots/3665783/dribbble.gif')
     st.header(":mailbox: Get In Touch With Me!")
     st.markdown(contact_form,unsafe_allow_html=True)
     apply_css("style/style.css")
