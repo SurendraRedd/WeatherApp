@@ -144,7 +144,7 @@ def my_home():
         st.sidebar.write("""
                     ## Weather Application Details
                     """)
-
+	st.sidebar.image('https://cdn.dribbble.com/users/1761137/screenshots/3665783/dribbble.gif')
     st.header('☁ Get Weather Details')   
     #st.markdown('https://openweathermap.org/api') 
 
@@ -228,6 +228,7 @@ def Contact():
         st.sidebar.write("""
                     ## Weather Application Details
                     """)
+	st.sidebar.image('https://cdn.dribbble.com/users/1761137/screenshots/3665783/dribbble.gif')
     st.header(":mailbox: Get In Touch With Me!")
     st.markdown(contact_form,unsafe_allow_html=True)
     apply_css("style/style.css")
