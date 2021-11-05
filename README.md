@@ -1,3 +1,5 @@
+![Weather Application](https://pimp-my-readme.webapp.io/pimp-my-readme/wavy-banner?subtitle=Weather%20Details%20of%20the%20City&title=Weather%20Application)
+
 # WeatherApp
 Weather Application using streamlit
 
