@@ -57,7 +57,7 @@ contact_form = """
 </form>
 """
 
-app = hy.HydraApp(title='☁Weather')
+app = hy.HydraApp(title='☁Weather',hide_streamlit_markers=True,use_navbar=True, navbar_sticky=True)
 
 # Function for LATEST WEATHER DATA
 def getweather(city):
