@@ -142,9 +142,9 @@ def my_home():
     with st_cont:
         st_lottie(lottie_json,height =100,width =200)
         st.sidebar.write("""
-                    ## Weather Application Details
+                    ## Weather Application
                     """)
-        st.sidebar.image('https://cdn.dribbble.com/users/1761137/screenshots/3665783/dribbble.gif')
+        #st.sidebar.image('https://cdn.dribbble.com/users/1761137/screenshots/3665783/dribbble.gif')
 
     st.header('☁ Get Weather Details')   
     #st.markdown('https://openweathermap.org/api') 
