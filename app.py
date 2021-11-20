@@ -29,6 +29,7 @@ from pyecharts import options as opts
 from st_radial import st_radial
 import hydralit as hy
 from streamlit_lottie import st_lottie
+from streamlit_text_rating.st_text_rater import st_text_rater
 
 # Utils Pkgs
 import codecs
@@ -233,6 +234,9 @@ def Contact():
     st.header(":mailbox: Get In Touch With Me!")
     st.markdown(contact_form,unsafe_allow_html=True)
     apply_css("style/style.css")
+    for text in ["Is this App useful?"]:
+		response = st_text_rater(text=text)
+		st.write(f"response --> {response}")
 
 # main function call
 if __name__ == '__main__':
