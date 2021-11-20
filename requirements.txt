@@ -6,3 +6,4 @@ streamlit-lottie
 requests
 link-button
 hydralit
+streamlit-text-rating
