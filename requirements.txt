@@ -1,7 +1,6 @@
 streamlit
 pandas
 pyecharts
-streamlit-lottie
 requests
 link-button
 hydralit
