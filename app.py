@@ -3,6 +3,7 @@ This application contains the code related to the
 Trend Analysis for different environments (Dev, Prod, Integ and DryRun).
 """
 
+
 __author__ = 'Surendra Reddy'
 __version__ = '1.0'
 __maintainer__ = 'Surendra Reddy'
@@ -10,11 +11,11 @@ __email__ = 'surendraelectronics@gmail.com'
 __status__ = 'Prototype'
 
 print('# ' + '=' * 78)
-print('Author: ' + __author__)
-print('Version: ' + __version__)
-print('Maintainer: ' + __maintainer__)
-print('Email: ' + __email__)
-print('Status: ' + __status__)
+print(f'Author: {__author__}')
+print(f'Version: {__version__}')
+print(f'Maintainer: {__maintainer__}')
+print(f'Email: {__email__}')
+print(f'Status: {__status__}')
 print('# ' + '=' * 78)
 
 
@@ -61,8 +62,7 @@ app = hy.HydraApp(title='☁Weather')
 
 # Function for LATEST WEATHER DATA
 def getweather(city):
-    result = requests.get(url.format(city, api_key))     
-    if result:
+    if result := requests.get(url.format(city, api_key)):
         json = result.json()
         #st.write(json)
         country = json['sys']['country']
@@ -89,10 +89,7 @@ def renderReport():
 def get_hist_data(lat,lon,start):
     res = requests.get(url_1.format(lat,lon,start,api_key))
     data = res.json()
-    temp = []
-    for hour in data["hourly"]:
-        t = hour["temp"]
-        temp.append(t)     
+    temp = [hour["temp"] for hour in data["hourly"]]
     return data , temp
 
 def load_lottieurl(url: str):
@@ -105,9 +102,7 @@ def load_lottieurl(url: str):
         [type]: json object return
     """
     r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
+    return None if r.status_code != 200 else r.json()
 
 # Let's write the Application
 # Custom Components Fxn
